@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'container_sized_box.dart';
-import 'container_sized_box_learn.dart';
+import 'container_sized_box.dart';
 
 class ScaffoldLearnView extends StatelessWidget {
   const ScaffoldLearnView({Key? key}) : super(key: key);
