@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '101/container_sized_box.dart';
-import '101/scaffold_learn.dart';
+import '101/button_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
-      home: const ScaffoldLearnView(),
+      home: const ButtonLearn(),
     );
   }
 }
