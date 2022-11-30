@@ -13,6 +13,6 @@ class ColorLearnView extends StatelessWidget {
 }
 
 class ColorItems {
-  final Color porchase = const Color(0xffEDBF61);
+  final Color purchase = const Color(0xffEDBF61);
   final Color sulu = const Color.fromRGBO(219, 163, 154, 1);
 }

@@ -25,10 +25,11 @@ class ButtonLearn extends StatelessWidget {
             FloatingActionButton(
                 onPressed: () {}, child: const Icon(Icons.add)),
             OutlinedButton(
-                style: OutlinedButton.styleFrom(
-                    backgroundColor: Colors.red, shape: const CircleBorder()),
-                onPressed: () {},
-                child: const Text('Data')),
+              style: OutlinedButton.styleFrom(
+                  backgroundColor: Colors.red, shape: const CircleBorder()),
+              onPressed: () {},
+              child: const Text('Data'),
+            ),
             InkWell(onTap: () {}, child: const Text('Custom')),
             Container(height: 100, color: Colors.white),
             const SizedBox(height: 10),

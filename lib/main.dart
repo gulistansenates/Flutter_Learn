@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import '101/app_bar_learn.dart';
 import '101/color_learn.dart';
 import '101/icon_learn.dart';
+import '101/stateless_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.black,
         elevation: 0,
       )),
-      home: const ColorLearnView(),
+      home: const StatelessLearn(),
     );
   }
 }
