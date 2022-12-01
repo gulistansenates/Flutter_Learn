@@ -6,6 +6,7 @@ import '101/card_learrn.dart';
 import '101/color_learn.dart';
 import '101/container_sized_box_learn.dart';
 import '101/icon_learn.dart';
+import '101/image_learn.dart';
 import '101/padding_learn.dart';
 import '101/scaffold_learn.dart';
 import '101/stateless_learn.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.black,
         elevation: 0,
       )),
-      home: const CardLearn(),
+      home: const ImageLearn(),
     );
   }
 }
