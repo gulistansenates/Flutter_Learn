@@ -9,7 +9,7 @@ class ImageLearn extends StatelessWidget {
       body: Column(children: [
         SizedBox(
           height: 100,
-          width: 300,
+          width: 100,
           child: PngImage(name: ImageItems().appleBookWithoutPath),
         ),
         Image.network(
@@ -23,8 +23,6 @@ class ImageLearn extends StatelessWidget {
 }
 
 class ImageItems {
-  final String appleWithBook = "assets/apple-5902283_960_720.png";
-  final String appleBook = "assets/apple-5902283_960_720.png";
   final String appleBookWithoutPath = "assets/apple-5902283_960_720.png";
 }
 
