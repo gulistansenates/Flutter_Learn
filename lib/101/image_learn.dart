@@ -23,7 +23,9 @@ class ImageLearn extends StatelessWidget {
 }
 
 class ImageItems {
-  final String appleBookWithoutPath = "assets/apple-5902283_960_720.png";
+  final String appleWithBook = "assets/apple.png";
+  final String appleBook = "assets/png/apple_book.png";
+  final String appleBookWithoutPath = "apple_book";
 }
 
 class PngImage extends StatelessWidget {
@@ -34,5 +36,5 @@ class PngImage extends StatelessWidget {
     return Image.asset(_nameWithPath, fit: BoxFit.cover);
   }
 
-  String get _nameWithPath => 'assets/$name.png';
+  String get _nameWithPath => 'assets/png/$name.png';
 }

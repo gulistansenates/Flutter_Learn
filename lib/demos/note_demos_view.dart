@@ -14,6 +14,8 @@ class NoteDemos extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.blueGrey[100],
       appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
         systemOverlayStyle: SystemUiOverlayStyle.dark,
       ),
       body: Padding(
@@ -51,7 +53,11 @@ class NoteDemos extends StatelessWidget {
 /// Center text widget
 class _SubTitleWidget extends StatelessWidget {
   const _SubTitleWidget(
-      {Key? key, this.textAlign = TextAlign.center, required this.title})
+      // ignore: unused_element
+      {Key? key,
+      // ignore: unused_element
+      this.textAlign = TextAlign.center,
+      required this.title})
       : super(key: key);
   final TextAlign textAlign;
   final String title;
