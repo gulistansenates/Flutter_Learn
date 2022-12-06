@@ -9,6 +9,7 @@ import '101/custom_widget_learn.dart';
 import '101/icon_learn.dart';
 import '101/image_learn.dart';
 import '101/indicator_learn.dart';
+import '101/list_tile_learn.dart';
 import '101/padding_learn.dart';
 import '101/scaffold_learn.dart';
 import '101/stateless_learn.dart';
@@ -27,13 +28,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData.dark().copyWith(
+          listTileTheme:
+              const ListTileThemeData(contentPadding: EdgeInsets.zero),
           appBarTheme: const AppBarTheme(
-        centerTitle: true,
-        systemOverlayStyle: SystemUiOverlayStyle.light,
-        backgroundColor: Colors.black,
-        elevation: 0,
-      )),
-      home: const IndicatorLearn(),
+            centerTitle: true,
+            systemOverlayStyle: SystemUiOverlayStyle.light,
+            backgroundColor: Colors.black,
+            elevation: 0,
+          )),
+      home: const ListTileLearn(),
     );
   }
 }
