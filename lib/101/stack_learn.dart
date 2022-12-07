@@ -12,16 +12,10 @@ class StackLearn extends StatelessWidget {
       ),
       body: Stack(
         children: [
-          Container(
-            color: Colors.purple[200],
-            height: 100,
-          ),
+          containerProperty(Colors.purple),
           Padding(
             padding: const EdgeInsets.only(top: 50),
-            child: Container(
-              color: Colors.grey[300],
-              height: 100,
-            ),
+            child: containerProperty(Colors.grey),
           ),
           Positioned(
             bottom: 0,
@@ -31,6 +25,13 @@ class StackLearn extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+
+  Container containerProperty(Color color) {
+    return Container(
+      height: 100,
+      color: color,
     );
   }
 }

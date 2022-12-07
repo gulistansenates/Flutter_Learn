@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.black,
             elevation: 0,
           )),
-      home: const StackDemoView(),
+      home: const StackLearn(),
     );
   }
 }
