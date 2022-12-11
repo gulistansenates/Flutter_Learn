@@ -31,14 +31,8 @@ class _TextFieldLearnState extends State<TextFieldLearn> {
               autofocus: true,
               autofillHints: const [AutofillHints.email],
               focusNode: focusNodeTextFieldOne,
-              inputFormatters: [TextProjectInputFormmater()._formmatter],
               textInputAction: TextInputAction.next,
               decoration: _InputDecarotor().emailInput,
-            ),
-            TextFormField(
-              focusNode: focusNodeTextFieldTwo,
-              minLines: 2,
-              maxLines: 4,
             ),
             TextField(
               maxLength: 20,
@@ -46,13 +40,12 @@ class _TextFieldLearnState extends State<TextFieldLearn> {
                   {int? currentLength, bool? isFocused, int? maxLength}) {
                 return _animatedContainer(currentLength);
               },
-              keyboardType: TextInputType.emailAddress,
+              keyboardType: TextInputType.visiblePassword,
               autofocus: true,
-              autofillHints: const [AutofillHints.email],
+              autofillHints: const [AutofillHints.password],
               focusNode: focusNodeTextFieldOne,
-              inputFormatters: [TextProjectInputFormmater()._formmatter],
               textInputAction: TextInputAction.next,
-              decoration: _InputDecarotor2().emailInput,
+              decoration: _InputDecarotor2().passwordInput,
             )
           ],
         ),
@@ -70,26 +63,20 @@ class _TextFieldLearnState extends State<TextFieldLearn> {
   }
 }
 
-class TextProjectInputFormmater {
-  final _formmatter = TextInputFormatter.withFunction((oldValue, newValue) {
-    if (newValue.text == "A") {
-      return oldValue;
-    }
-    return oldValue;
-  });
-}
-
 class _InputDecarotor {
   final emailInput = const InputDecoration(
-    prefixIcon: Icon(Icons.mail),
-    border: OutlineInputBorder(),
-    labelText: LanguageItems.mailTitle,
-  );
+      labelText: 'Mail',
+      icon: Padding(
+        padding: EdgeInsets.only(top: 15.0),
+        child: Icon(Icons.mail),
+      ));
 }
 
 class _InputDecarotor2 {
-  final emailInput = const InputDecoration(
-    prefixIcon: Icon(Icons.password),
-    border: OutlineInputBorder(),
-  );
+  final passwordInput = const InputDecoration(
+      labelText: 'Password',
+      icon: Padding(
+        padding: EdgeInsets.only(top: 15.0),
+        child: Icon(Icons.lock),
+      ));
 }
