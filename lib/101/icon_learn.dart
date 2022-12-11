@@ -8,7 +8,7 @@ class IconLearnView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: const Text('Helllo')),
+        appBar: AppBar(title: const Text('Hello')),
         body: Column(
           children: [
             IconButton(

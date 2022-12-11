@@ -12,8 +12,6 @@ class StatefulLearn extends StatefulWidget {
 class _StatefulLearnState extends State<StatefulLearn> {
   int _countValue = 0;
 
-  final int _counterCustom = 0;
-
   void _updateCounter(bool isIncrement) {
     if (isIncrement) {
       _countValue = _countValue + 1;

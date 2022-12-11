@@ -6,10 +6,7 @@ class StackLearn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-      ),
+      appBar: AppBar(),
       body: Stack(
         children: [
           containerProperty(Colors.purple),

@@ -12,8 +12,6 @@ class AppBarLearnView extends StatelessWidget {
       title: Text(_title),
       leading: const Icon(Icons.chevron_left),
       centerTitle: true,
-      backgroundColor: Colors.transparent,
-      elevation: 0,
       systemOverlayStyle: SystemUiOverlayStyle.light,
       actionsIconTheme: const IconThemeData(color: Colors.purple, size: 24),
       automaticallyImplyLeading: false,

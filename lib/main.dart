@@ -16,6 +16,7 @@ import '101/page_view_learn.dart';
 import '101/scaffold_learn.dart';
 import '101/stack_learn.dart';
 import '101/statefull_learn.dart';
+import '101/statefull_life_cycle_learn.dart';
 import '101/stateless_learn.dart';
 import '101/text_learn.dart';
 import 'package:flutter_learn/demos/note_demos_view.dart';
@@ -39,10 +40,10 @@ class MyApp extends StatelessWidget {
           appBarTheme: const AppBarTheme(
             centerTitle: true,
             systemOverlayStyle: SystemUiOverlayStyle.light,
-            backgroundColor: Colors.black,
+            backgroundColor: Colors.transparent,
             elevation: 0,
           )),
-      home: const PageViewLearn(),
+      home: const StatefullLifeCycleLearn(message: 'Güliii'),
     );
   }
 }
