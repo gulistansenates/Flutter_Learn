@@ -11,6 +11,7 @@ import '101/icon_learn.dart';
 import '101/image_learn.dart';
 import '101/indicator_learn.dart';
 import '101/list_tile_learn.dart';
+import '101/navigation_learn.dart';
 import '101/padding_learn.dart';
 import '101/page_view_learn.dart';
 import '101/scaffold_learn.dart';
@@ -22,6 +23,7 @@ import '101/text_field_lear.dart';
 import '101/text_learn.dart';
 import 'package:flutter_learn/demos/note_demos_view.dart';
 
+import 'demos/my_collections_demos.dart';
 import 'demos/stack_demo_view.dart';
 
 void main() {
@@ -54,7 +56,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0,
           )),
-      home: const TextFieldLearn(),
+      home: const NavigationLearn(),
     );
   }
 }
